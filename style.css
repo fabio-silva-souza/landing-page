@@ -88,9 +88,8 @@ body
 .color
 {
     position: absolute;
-    width: 17rem;
-    height: 17rem;
-    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
     filter: blur(40px); 
     animation: ground 10s ease-in infinite; 
 }
@@ -135,21 +134,28 @@ section
 section .color:nth-child(1)
 {
     top: 20px;
-    left: 1100px;
+    left: 110px;
     width: 12rem;
     height: 12rem;
 }
 section .color:nth-child(2)
 {
-    bottom: 70px;
-    left: 1000px;
+    top: 5px;
+    left: 10px;
     width:15rem;
     height: 15rem;
 }
 section .color:nth-child(3)
 {
-    width: 23rem;
-    height: 23rem;  
+    bottom: 5px;
+    right: 40px;
+    width: 17rem;
+    height: 17rem;  
+}
+section .color:nth-child(4)
+{
+    bottom: 60px;
+    right: 10px;
 }
 .container
 {
@@ -167,217 +173,13 @@ section .color:nth-child(3)
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: absolute;
     height: 100%;
     padding: 20px 70px 0 70px;
     border-right: 1px inset #00BFFF;
     border-left: 1px inset #00BFFF ;
     box-shadow: 0px 10px 20px 0px #00BFFF;
-}
-.input-0 input
-{
-    width: 100%;
-    border: none;
-    outline: none;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 35px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #fff;
-    background: none;
-    border: 1px solid rgba( 255, 255, 255, 0.5);
-}
-.input-0 input[type="submit"]
-{
-    margin-top: 30px;
-    width: 120px;
-    color: #00BFFF;
-    border: 1px solid #00BFFF;
-    box-shadow: 0px 0px 30px  #00BFFF;  
-}
-.input-0 input[type="submit"]:hover
-{
-    background: #00BFFF;
-    color: #1c1c1c;
-}
-@import url("@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@600&family=Righteous&display=swap');");
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-}
-body
-{
     background: linear-gradient( 75deg, #1c1c1c,#4f4f4f);
-
-}
-/* header */
-.header-01
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px;
-}
-.header-nav
-{
-    display: flex;
-    gap: 4rem;
-}
-#image-header
-{
-    width: 40px;
-    padding: 5px;
-    border: 1px solid #00BFFF;
-    box-shadow: 0px 0px 20px #FF00FF;
-    border-radius: 10px;
-}
-.btn-header
-{
-    border-radius: 10px;
-    padding: 6px;
-    color: #00d9ff;
-    text-shadow: 0px 0px 15px #00d9ff;
-    border: solid 2px #00d9ff;
-    box-shadow: 0px 0px 15px #00d9ff;
-}
-.btn-header:hover
-{
-    color: #1c1c1c;
-    background: #00d9ff;
-}
-/* main */
-.main-01
-{
-    min-height: 80vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 30px;
-}
-.content-text-title
-{
-    padding-bottom: 30px;
-}
-.content-main
-{
-    font-size: 25px;
-    width: 500px;
-    padding: 10px;
-    text-align: center;
-}
-/* image/color */
-.colors
-{
-    position: relative;
-    display: flex;
-    width: 500px;
-    margin: 30px;
-    justify-content: center;
-
-}
-#image-main
-{
-    height: 20rem;
-    position: relative;   
-}
-.color
-{
-    position: absolute;
-    width: 17rem;
-    height: 17rem;
-    border-radius: 50%;
-    filter: blur(40px); 
-    animation: ground 10s ease-in infinite; 
-}
-.color:nth-child(1)
-{
-    bottom: 20px;
-    left: 10px;
-    background: #00BFFF;
-    box-shadow: 0px 0px 15px 50px #00BFFFcf;
-}
-.color:nth-child(2)
-{   
-    background: #FF00FF;
-    box-shadow: 0px 0px 15px 60px #FF00FFcf;
-}
-@keyframes ground
-{
-    0%,50%{background: #FF00FF; box-shadow:  0px 0px 15px 50px #FF00FFcf;}
-    50%,75%{background:#00BFFF;}
-    75%,100%{background: #FF00FF;}
-    100%,0%{background: #00BFFF;box-shadow:  0px 0px 15px 50px #00BFFF;}    
-}
-/* footer/image */
-.footer-01
-{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-#image-footer
-{
-    width: 50px;
-    border: 1px solid #FF00FF;
-    box-shadow: 0px 0px 10px #00BFFF;
-    border-radius: 10px;
-}
-/* sign/form */
-section
-{
-    min-height: 100vh;
-}
-section .color:nth-child(1)
-{
-    top: 20px;
-    left: 1100px;
-    width: 12rem;
-    height: 12rem;
-}
-section .color:nth-child(2)
-{
-    bottom: 70px;
-    left: 1000px;
-    width:15rem;
-    height: 15rem;
-}
-section .color:nth-child(3)
-{
-    width: 23rem;
-    height: 23rem;  
-}
-.container
-{
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    text-align: center;
-}
-.form h2
-{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.form
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    height: 100%;
-    padding: 20px 70px 0 70px;
-    border-right: 1px inset #00BFFF;
-    border-left: 1px inset #00BFFF ;
-    box-shadow: 0px 10px 20px 0px #00BFFF;
 }
 .input-0 input
 {
