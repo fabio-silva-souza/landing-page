@@ -11,6 +11,7 @@
 body
 {
     background: linear-gradient( 75deg, #1c1c1c,#4f4f4f);
+    min-height: 100vh;
 
 }
 /* header */
@@ -20,7 +21,7 @@ body
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
 }
 .header-nav
 {
@@ -117,7 +118,7 @@ body
 {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
 }
 #image-footer
 {
